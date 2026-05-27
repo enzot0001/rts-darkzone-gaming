@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RTS DarkZone Gaming | Simulator Mods Hub</title>
+  <meta
+    name="description"
+    content="RTS DarkZone Gaming - PC and Mobile simulator gaming hub for ETS2, Proton Bus Simulator, Bus Simulator Indonesia, mods, maps, skins, videos and downloads."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-box">
+      <div class="loader-logo">RTS <span>DarkZone</span></div>
+      <p>Booting simulator command center...</p>
+      <div class="loader-bar">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative background -->
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-slideshow">
+      <div class="bg-slide is-visible" id="bgSlideA"></div>
+      <div class="bg-slide" id="bgSlideB"></div>
+    </div>
+  
+    <div class="bg-overlay"></div>
+    <div class="sun-glow"></div>
+  
+    <span class="cloud cloud-1"></span>
+    <span class="cloud cloud-2"></span>
+    <span class="cloud cloud-3"></span>
+  
+    <div class="hill hill-1"></div>
+    <div class="hill hill-2"></div>
+  
+    <div class="bg-caption" id="bgCaption">
+      <span class="bg-caption-tag" id="bgCaptionTag">Scenic Route</span>
+      <span class="bg-caption-text" id="bgCaptionText">Mercedes Sprinter Countryside</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-mark">RTS</span>
+        <span class="brand-text">DarkZone Gaming</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#videos">Videos</a>
+        <a href="#mods">Mods & Maps</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">PC + Mobile Simulator Gaming Hub</span>
+          <h1>RTS DarkZone Gaming</h1>
+          <p class="hero-slogan">WHERE GAMERS RESPAWN AS A LEGENDS</p>
+          <p class="hero-text">
+            A dark simulator universe built for players who live for long-haul trucking,
+            realistic bus driving, custom liveries, map expansions, and downloadable mods.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#mods" class="btn btn-primary">Explore Mods</a>
+            <a href="#videos" class="btn btn-secondary">Watch Gameplay</a>
+            <a href="#downloads" class="btn btn-ghost">Download Maps</a>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card glass reveal">
+              <strong class="count" data-target="3">0</strong>
+              <span>Core Games</span>
+            </article>
+            <article class="stat-card glass reveal">
+              <strong class="count" data-target="12">0</strong>
+              <span>Demo Files</span>
+            </article>
+            <article class="stat-card glass reveal">
+              <strong class="count" data-target="24">0</strong>
+              <span>Gallery Items</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal tilt">
+          <div class="orb"></div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+
+          <div class="dashboard-card glass">
+            <div class="dashboard-top">
+              <span>DarkZone Route Matrix</span>
+              <span class="live-dot">LIVE</span>
+            </div>
+
+            <div class="hud-circle">
+              <div class="hud-core"></div>
+            </div>
+
+            <div class="route-list">
+              <div>
+                <span>ETS2 Convoy</span>
+                <strong>Online</strong>
+              </div>
+              <div>
+                <span>Proton Bus Mods</span>
+                <strong>Updated</strong>
+              </div>
+              <div>
+                <span>BUSSID Liveries</span>
+                <strong>Ready</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-a glass">Truck Mods</div>
+          <div class="float-card float-b glass">Bus Maps</div>
+          <div class="float-card float-c glass">HD Liveries</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <section class="ticker-section">
+      <div class="ticker-track">
+        <span>Euro Truck Simulator 2</span>
+        <span>Proton Bus Simulator</span>
+        <span>Bus Simulator Indonesia</span>
+        <span>Truck Mods</span>
+        <span>Bus Mods</span>
+        <span>Maps</span>
+        <span>Skins</span>
+        <span>Weather Packs</span>
+        <span>Sound Mods</span>
+        <span>Driving Realism</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">About DarkZone</span>
+          <h2>Built for simulator players who love realism, routes, and modded experiences.</h2>
+          <p>
+            RTS DarkZone Gaming is a simulator-focused platform for both PC and mobile players.
+            From Euro Truck Simulator 2 to Proton Bus Simulator and Bus Simulator Indonesia,
+            this space is made for discovering gameplay, custom vehicles, map add-ons, skins,
+            and community-driven content.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy glass reveal">
+            <h3>Drive deeper into the DarkZone.</h3>
+            <p>
+              This website concept is designed as a premium dark gaming hub where you can
+              showcase screenshots, gameplay videos, downloadable mods, maps, liveries,
+              tools, and community links all in one place.
+            </p>
+
+            <ul class="feature-list">
+              <li>PC + Mobile simulator support</li>
+              <li>Modern dark neon UI</li>
+              <li>Animated sections and 3D card effects</li>
+              <li>Filterable downloads center</li>
+            </ul>
+          </div>
+
+          <div class="about-panels">
+            <article class="mini-panel glass reveal tilt">
+              <span class="mini-tag">PC</span>
+              <h4>Euro Truck Simulator 2</h4>
+              <p>Long-haul routes, map expansions, traffic realism, and truck customization.</p>
+            </article>
+
+            <article class="mini-panel glass reveal tilt">
+              <span class="mini-tag">Mobile</span>
+              <h4>Proton Bus Simulator</h4>
+              <p>Passenger routes, cockpit driving, bus packs, and realistic sound add-ons.</p>
+            </article>
+
+            <article class="mini-panel glass reveal tilt">
+              <span class="mini-tag">Mobile</span>
+              <h4>Bus Simulator Indonesia</h4>
+              <p>Custom liveries, map culture, bus mods, and community-built content.</p>
+            </article>
+
+            <article class="mini-panel glass reveal tilt">
+              <span class="mini-tag">Hub</span>
+              <h4>Mods + Maps + Skins</h4>
+              <p>A single command center for downloads, previews, updates, and community links.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Featured Games</span>
+          <h2>Core simulator titles inside the DarkZone.</h2>
+          <p>
+            Focused on the games you actually play most: ETS2, Proton Bus Simulator,
+            BUSSID, and any simulator title that supports vehicles, maps, skins, or realism mods.
+          </p>
+        </div>
+
+        <div class="game-grid" id="gamesGrid"></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2>Screenshots, cockpit views, custom liveries, and map moments.</h2>
+          <p>Demo gallery items are included below. Click any card to open the lightbox preview.</p>
+        </div>
+
+        <div class="filter-bar reveal" id="galleryFilters">
+          <button class="filter-btn active" data-gallery="all">All</button>
+          <button class="filter-btn" data-gallery="ets2">ETS2</button>
+          <button class="filter-btn" data-gallery="proton">Proton Bus</button>
+          <button class="filter-btn" data-gallery="bussid">BUSSID</button>
+          <button class="filter-btn" data-gallery="maps">Maps</button>
+          <button class="filter-btn" data-gallery="skins">Skins</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- Videos -->
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Gameplay Videos</span>
+          <h2>Route showcases, mod reviews, tutorials, and simulator highlights.</h2>
+          <p>
+            These cards are ready for your YouTube links, gameplay uploads, or mod review playlists.
+          </p>
+        </div>
+
+        <div class="video-grid" id="videosGrid"></div>
+      </div>
+    </section>
+
+    <!-- Mods -->
+    <section class="section" id="mods">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Mods & Maps</span>
+          <h2>The main DarkZone library for files, add-ons, and realism packs.</h2>
+          <p>
+            Use the search and filters below to browse the demo download cards. You can later
+            connect these buttons to your own real file links.
+          </p>
+        </div>
+
+        <div class="toolbar reveal">
+          <input
+            type="text"
+            id="modSearch"
+            class="control-input"
+            placeholder="Search mods, maps, skins, weather packs..."
+          />
+
+          <select id="gameFilter" class="control-input">
+            <option value="all">All Games</option>
+            <option value="Euro Truck Simulator 2">Euro Truck Simulator 2</option>
+            <option value="Proton Bus Simulator">Proton Bus Simulator</option>
+            <option value="Bus Simulator Indonesia">Bus Simulator Indonesia</option>
+          </select>
+
+          <select id="platformFilter" class="control-input">
+            <option value="all">All Platforms</option>
+            <option value="PC">PC</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+
+          <select id="categoryFilter" class="control-input">
+            <option value="all">All Categories</option>
+            <option value="Truck Mod">Truck Mod</option>
+            <option value="Bus Mod">Bus Mod</option>
+            <option value="Map">Map</option>
+            <option value="Skin">Skin</option>
+            <option value="Weather">Weather</option>
+            <option value="Sound">Sound</option>
+            <option value="Tool">Tool</option>
+          </select>
+        </div>
+
+        <p class="results-note reveal" id="resultsCount">0 files found</p>
+
+        <div class="mods-grid" id="modsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section" id="downloads">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Downloads Center</span>
+          <h2>A cleaner command panel for the latest downloadable files.</h2>
+          <p>
+            This compact list updates from the same mod library. Replace demo actions with your
+            own MediaFire, Google Drive, Mega, or direct file links later.
+          </p>
+        </div>
+
+        <div class="download-stats">
+          <article class="download-stat glass reveal">
+            <span>Total Demo Files</span>
+            <strong id="downloadTotal">0</strong>
+          </article>
+          <article class="download-stat glass reveal">
+            <span>PC Files</span>
+            <strong id="downloadPC">0</strong>
+          </article>
+          <article class="download-stat glass reveal">
+            <span>Mobile Files</span>
+            <strong id="downloadMobile">0</strong>
+          </article>
+        </div>
+
+        <div class="download-list reveal" id="downloadList"></div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Community</span>
+          <h2>Join the DarkZone simulator network.</h2>
+          <p>
+            Share liveries, screenshots, route videos, convoy moments, and mod recommendations
+            with other simulator players across PC and mobile.
+          </p>
+        </div>
+
+        <div class="community-grid">
+          <article class="community-card glass reveal tilt">
+            <span class="community-icon">💬</span>
+            <h3>Discord Convoy</h3>
+            <p>Chat with players, share setups, and organize simulator events.</p>
+            <a href="#" class="link-btn">Join Server</a>
+          </article>
+
+          <article class="community-card glass reveal tilt">
+            <span class="community-icon">▶</span>
+            <h3>YouTube Channel</h3>
+            <p>Upload gameplay, tutorials, and mod showcases for your audience.</p>
+            <a href="#" class="link-btn">Open Channel</a>
+          </article>
+
+          <article class="community-card glass reveal tilt">
+            <span class="community-icon">📘</span>
+            <h3>Facebook Group</h3>
+            <p>Post screenshots, liveries, map reviews, and new file updates.</p>
+            <a href="#" class="link-btn">Open Group</a>
+          </article>
+
+          <article class="community-card glass reveal tilt">
+            <span class="community-icon">🎵</span>
+            <h3>TikTok Clips</h3>
+            <p>Share short edits, bus moments, road views, and realistic driving clips.</p>
+            <a href="#" class="link-btn">Watch Clips</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Send a message to the DarkZone command center.</h2>
+          <p>
+            Use the form below for partnership requests, mod submissions, collaboration, or
+            community support.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass reveal">
+            <h3>Why contact us?</h3>
+            <ul class="contact-list">
+              <li>Submit your ETS2 truck mod</li>
+              <li>Share Proton Bus add-ons</li>
+              <li>Promote BUSSID skins and maps</li>
+              <li>Request a featured download slot</li>
+            </ul>
+
+            <div class="contact-badges">
+              <span>PC</span>
+              <span>Mobile</span>
+              <span>Mods</span>
+              <span>Maps</span>
+              <span>Skins</span>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Message subject" />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+    <div class="lightbox-card">
+      <div class="lightbox-visual" id="lightboxVisual"></div>
+      <div class="lightbox-content">
+        <span class="lightbox-category" id="lightboxCategory"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxText"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand footer-brand">
+          <span class="brand-mark">RTS</span>
+          <span class="brand-text">DarkZone Gaming</span>
+        </a>
+        <p class="footer-text">
+          Premium simulator gaming hub for ETS2, Proton Bus Simulator, BUSSID, and modded driving experiences.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#games">Games</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#mods">Mods & Maps</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Community</h4>
+        <ul class="footer-links">
+          <li><a href="#community">Discord</a></li>
+          <li><a href="#community">YouTube</a></li>
+          <li><a href="#community">Facebook</a></li>
+          <li><a href="#community">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> RTS DarkZone Gaming. All rights reserved.</p>
+      <p>WHERE GAMERS RESPAWN AS A LEGENDS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
