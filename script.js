@@ -187,26 +187,34 @@ const videos = [
 
 const mods = [
   {
-    title: "ETS2 Realistic Traffic Pack",
-    game: "Euro Truck Simulator 2",
+    title: "BUSSID Mesh Replacer",
+    game: "Bus Simulator Indonesia",
     platform: "PC",
-    category: "Truck Mod",
-    version: "v2.3",
-    size: "428 MB",
-    badge: "Popular",
-    description: "Adds denser, more believable traffic flow for longer and more immersive road sessions.",
-    theme: "ets2"
+    category: "Tool",
+    version: "v1.0 Beta",
+    size: "Check link",
+    badge: "New",
+    description:
+      "Essential PC tool for replacing 3D mesh files in BUSSID. Perfect for advanced mod creators who want to customize bus models, vehicles, and assets. Note: Beta version, may contain bugs — backup recommended.",
+    image: "https://placehold.co/600x300/0ea5e9/ffffff/png?text=BUSSID+Mesh+Replacer",
+    downloadLink: "https://www.mediafire.com/file/d4kk965k4fx8af0/BussidMeshReplacer_v1_%2528mbola_misy_bugs_ity%252C_afaka_andramana%2529.exe/file",
+    downloadText: "Download (.exe)",
+    note: "⚠️ Beta version — may contain bugs"
   },
   {
-    title: "ETS2 Indonesia Map Expansion",
-    game: "Euro Truck Simulator 2",
+    title: "BUSSID Mod Tool",
+    game: "Bus Simulator Indonesia",
     platform: "PC",
-    category: "Map",
-    version: "v1.8",
-    size: "1.2 GB",
-    badge: "Updated",
-    description: "Large map add-on focused on Indonesian-style routes, road atmosphere, and regional detail.",
-    theme: "maps"
+    category: "Tool",
+    version: "v4.5",
+    size: "Check link",
+    badge: "Popular",
+    description:
+      "Complete PC modding toolkit for Bus Simulator Indonesia. Helps you create, edit, and install custom mods, liveries, and add-ons with ease. License required to unlock full features.",
+    image: "https://placehold.co/600x300/10b981/ffffff/png?text=BUSSID+Mod+Tool",
+    downloadLink: "https://www.mediafire.com/file/zqc7s0y5uf5szji/BussidModTool_v4.5_%2528mila_license%2529.exe/file",
+    downloadText: "Download (.exe)",
+    note: "🔑 License required"
   },
   {
     title: "ETS2 Storm Weather FX",
@@ -465,6 +473,7 @@ function getFilteredMods() {
   });
 }
 
+
 function renderMods() {
   const filteredMods = getFilteredMods();
 
@@ -485,7 +494,11 @@ function renderMods() {
     .map(
       (mod) => `
       <article class="mod-card glass reveal tilt">
-        <div class="visual theme-${mod.theme}">
+        <div class="visual ${mod.image ? 'visual-image' : `theme-${mod.theme || 'hub'}`}">
+          ${mod.image 
+            ? `<img src="${mod.image}" alt="${mod.title}" loading="lazy" />` 
+            : ''
+          }
           <span class="visual-chip badge ${mod.badge.toLowerCase()}">${mod.badge}</span>
           <span class="visual-label">${mod.category}</span>
         </div>
@@ -499,13 +512,20 @@ function renderMods() {
         <h3>${mod.title}</h3>
         <p>${mod.description}</p>
 
+        ${mod.note ? `<p class="mod-note">${mod.note}</p>` : ''}
+
         <div class="meta-line">
           <span><strong>Version:</strong> ${mod.version}</span>
           <span><strong>Size:</strong> ${mod.size}</span>
         </div>
 
         <div class="mod-actions">
-          <button class="btn btn-primary btn-small download-btn" data-title="${mod.title}" type="button">Download</button>
+          ${mod.downloadLink 
+            ? `<a href="${mod.downloadLink}" class="btn btn-primary btn-small" target="_blank" rel="noopener">
+                📥 ${mod.downloadText || "Download"}
+              </a>`
+            : `<button class="btn btn-primary btn-small download-btn" data-title="${mod.title}" type="button">Download</button>`
+          }
           <button class="btn btn-ghost btn-small info-btn" data-title="${mod.title}" type="button">More Info</button>
         </div>
       </article>
@@ -544,12 +564,18 @@ function renderDownloadRows(list = mods) {
           </div>
           <h4>${mod.title}</h4>
           <p>${mod.description}</p>
+          ${mod.note ? `<p class="mod-note">${mod.note}</p>` : ''}
           <p><strong>Version:</strong> ${mod.version} • <strong>Size:</strong> ${mod.size}</p>
         </div>
 
         <div class="download-row-actions">
           <span class="badge ${mod.badge.toLowerCase()}">${mod.badge}</span>
-          <button class="btn btn-secondary btn-small download-btn" data-title="${mod.title}" type="button">Download</button>
+          ${mod.downloadLink 
+            ? `<a href="${mod.downloadLink}" class="btn btn-secondary btn-small" target="_blank" rel="noopener">
+                📥 Download
+              </a>`
+            : `<button class="btn btn-secondary btn-small download-btn" data-title="${mod.title}" type="button">Download</button>`
+          }
         </div>
       </article>
     `

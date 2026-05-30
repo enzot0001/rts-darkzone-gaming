@@ -970,3 +970,56 @@ footer {
   text-align: center;
   justify-content: center;
 }
+
+
+/* =========================
+   Mod Image + Note
+========================= */
+.visual-image {
+  position: relative;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.visual-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.6s ease;
+}
+
+.mod-card:hover .visual-image img {
+  transform: scale(1.08);
+}
+
+.visual-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
+}
+
+.visual-image .visual-chip,
+.visual-image .visual-label {
+  z-index: 2;
+}
+
+.visual-image .visual-label {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.mod-note {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 8px;
+  color: #b45309;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
